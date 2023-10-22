@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Editor</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="light">
+    <div class="editor">
+      <p class="text-center display-4">Code Editor</p>
+
+      <textarea
+        id="code-editor"
+        placeholder="Enter your code here"
+        class="form-control"
+      ></textarea>
+      <div class="btn-group" role="group" aria-label="Code Editor Buttons">
+        <button id="copy-button" class="btn btn-primary">Copy</button>
+        <button id="save-button" class="btn btn-secondary">Save</button>
+        <button id="lock-button" class="btn btn-success">Lock</button>
+        <button id="run-button" class="btn btn-primary">Run</button>
+      </div>
+
+      <textarea
+        id="input-box"
+        placeholder="Input (optional)"
+        class="form-control"
+      ></textarea>
+      <pre id="output" class="border"></pre>
+    </div>
+
+    <button id="theme-button" class="theme-button btn btn-primary">
+      Toggle Theme
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
